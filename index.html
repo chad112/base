@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head ng-app="scotchApp">
+  <title> Base Template </title>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+  <script src="js/app.js"></script>
+</head>
+<body class="gradient" ng-controller="mainController">
+  <nav class="navigation">
+    <img class="logo" src="http://placehold.it/50x50">
+    <ul>
+      <li><a href="#home"> Home </a></li>
+      <li><a href="#about"> About </a></li>
+      <li><a href="#contact"> Contact </a></li>
+      <li><a href="#store"> Store </a></li>
+    </ul>
+  </nav>
+  <div class="main_container">
+      <div ng-view>
+        <div class="jumbotron">
+          <h1> Welcome to Base Template </h1>
+          <p> We're so glad you're here. We're going to have so much fun together. </p>
+        </div>
+      </div>
+  </div>
+  <footer>
+    <p>&copy; Prism Advertising 2015 </p>
+  </footer>
+</body>
+</html>
